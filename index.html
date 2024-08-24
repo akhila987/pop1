@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            background-image: url(pro1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .container2{
+            background-image: url(pro1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: grid;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+        }
+        .box1{
+            background-color: gray;
+            height: 65vh;
+            width: 55vw;
+           
+            }
+            .p1{
+                display: flex;
+            }
+            .p2{
+                display: flex;
+                
+            }
+            .container3{
+                background-image: url(pro1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: grid;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+            }
+            .box2{
+                background-color: gray;
+            height: 65vh;
+            width: 55vw;
+            }
+            button{
+                border: 2px solid black;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.425);
+                margin-left: 3vw;
+            }
+            .b1{
+                display: flex;
+                justify-content: flex-end;
+              position: relative;
+              top: -49vh;
+              padding-right: 3vw;
+            }
+            .container4{
+                background-image: url(pro1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: grid;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+            }
+            .box3{
+                background-color: gray;
+            height: 65vh;
+            width: 55vw;
+            }
+            .f1{
+                display: flex;
+              padding-top: 10vh;
+               gap: 10px;
+                height: 20vh;
+                width: 10vw;
+                padding-left: 2vw;
+
+            }
+            .container5{
+                background-image: url(pro1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: grid;
+        justify-content: center;
+      align-items: center;
+      align-content: center;
+            }
+            .box4{
+                background-color: gray;
+            height: 65vh;
+            width: 55vw;
+            }
+           .for{
+            padding-left: 2vw;
+           }
+           .bar{
+            display: grid;
+                grid-template-areas: "h1 h2"
+                                    "h3 h4";
+                                    justify-content: center;
+                                  align-items: center;
+                                  position: relative;
+                                  left: 15vw;
+                                  bottom: 30vh;
+           }
+           .h1{
+            grid-area:h1 ;
+            border: 2px solid green;
+            padding: 7vh;
+           
+           }
+           .h2{
+            grid-area: h2;
+            border: 2px solid green;
+            padding: 7vh;
+           }
+           .h3{
+            grid-area:h3 ;
+            border: 2px solid green;
+            padding: 7vh;
+           }
+           .h4{
+            grid-area:h4 ;
+            border: 2px solid green;
+            padding: 7vh;
+           }
+           
+            
+           
+           @media (max-width: 768px) {
+     .container1, .container2, .container3, .container4, .container5 {
+        background-size: contain;
+        height: auto;
+        padding: 10px;
+       
+    } 
+
+    .box1, .box2, .box3, .box4 {
+        width: 90vw;
+        height: auto;
+       
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .bar {
+        grid-template-areas:
+            "h1"
+            "h2"
+            "h3"
+            "h4";
+        left: 0;
+        bottom: 0;
+        position: static;
+        margin: 20px 0;
+        justify-items: center;
+        margin-top:-80% ;
+    }
+
+    .h1, .h2, .h3, .h4 {
+        padding: 3vh;
+        border: 1px solid green;
+        margin: 5px 0;
+       
+    }
+
+    .p1, .p2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .p1 img, .p2 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin: 10px auto;
+        display: block;
+        width: 90%;
+    }
+
+    .f1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 200%;
+    }
+
+    .f1 img {
+        width: 70vw;
+        height: auto;
+    }
+
+    .for {
+        width: 100%;
+        padding: 0;
+    }
+    .box4{
+        margin-top: 100%;
+    }
+
+    .for input, .for textarea {
+        width: 90%;
+        margin: 5px auto;
+        display: block;
+}
+.bo3{
+    margin-top: 50%;
+}
+
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container1, .container2, .container3, .container4, .container5 {
+        height: auto;
+        
+    }
+
+    .box1, .box2, .box3, .box4 {
+        width: 80vw;
+        height: auto;
+        padding: 2vw;
+    }
+
+    .p1, .p2, .f1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p1 img, .p2 img, .f1 img {
+        width: 100%;
+        padding-left: 50%;
+       
+    }
+
+    .bar {
+        grid-template-areas: 
+            "h1"
+            "h2"
+            "h3"
+            "h4";
+        justify-content: center;
+        align-items: center;
+        /* left: 0;
+        bottom: 0; */
+        height: 30%;
+        padding-top: -30%;
+    }
+
+    .h1, .h2, .h3, .h4 {
+        padding: 5vh;
+        width: 80%;
+        margin: 5px auto;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .b1 {
+        justify-content: center;
+        top: 0;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .for {
+        padding-left: 0;
+    }
+
+    .for input[type="text"],
+    .for textarea {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .box4{
+      margin-top: 10%;
+    }
+   
+    .f1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container2{
+       margin-top: 30%;
+    }
+    .wel{
+        margin-left: -40%;
+    }
+    .bo3{
+        padding-top: -70%;
+    }
+    
+    .container1{
+        height: 70em;
+        width: 50em;
+    }
+    .data{
+        padding-left: 10%;
+       margin-left: 10vw;
+    }
+}*/
+        
+    </style>
+</head>
+<body>
+    <section class="container1">
+        <div>
+            <h2 style="padding-left:36vw; color: white; font-size: 30px;padding-top: 45vh; " class="po">Pop desin</h2>
+            <img src="underline.png" class="underline" style="padding-left: 20vw;">
+            <p style="padding-left: 20vw; color: white ; width: 20vw;" class="data"> New HTML templates with pop up pages and use this layout for your website</p>
+        </div>
+        <div class="bar">
+           
+            <img src="home.jpg" alt="" height="20px" width="20px" class="h1">
+           
+        
+            <img src="team2.png" alt=""  height="20px" width="20px" class="h2">
+            <img src="shakehand.jpg" alt=""  height="20px" width="20px" class="h3">
+            <img src="contact.png" alt=""  height="20px" width="20px" class="h4">
+        </div>
+    </section>
+    <section class="container2">
+        <header class="box1">
+            <h2 style="color: white; padding-left: 10px;">Welcome to pop design</h2>
+            <header class="p1">
+            <img src="welcome-1.jpg" alt="" style="padding-left: 3vw;">
+            <p style="padding-right: 4vw; padding-left: 2vw; color: white;  font-size: 17px;">Donac eu lectus ligula. Aenean pulvinar dolor et massa lacinia rhoncus sit amet sed maurls. Aliwuam dictum nibh et consequat finibus.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. in magna mauris, malesuada ut diam ey, pelientasque fringilla ord</p>
+        </header>
+        <header class="p2">
+            <p style="padding-top: 6vh; padding-left: 3vw; color: white; font-size: 20px;">You can feel free to use this template for your websites. Please tell your friends about Tooplate website. Thank you
+                 vivamus placerat in nunc eget volupat , etlam tincidunt blamdit saplen, sed posure enim.ut  eget ornare lectus</p>
+                 <img src="welcome-2.jpg" alt="" style="padding-top: 10vh; padding-right: 3vw;" class="wel">
+        </header>
+        </header>
+    </section>
+    <section class="container3">
+            <header class="box2">
+                    <h2 style="color: white; padding-left: 3vw;" class="ourteam">Background of our team</h2>
+                    <p style="padding-right: 20vw; font-size: 20px; color: white; padding-left: 3vw;">Vestibulum aliquet, arct acctmsan lobortis bibe dum,justo velit efficitur lorem, at pulvinear mi justo nec lacus. Nullam et libero aliquet, luctus nunc sit
+                        amet, tincidunt ligula. Sed finibus ante sed tortor cursus,  nec malesuada lectus interdum.</p>
+                    <p style="padding-right: 20vw;  font-size: 20px; color: white; padding-left: 3vw;"> Sed ex turpis, vulputate in efficitur id, lobortis eget nibh. Pellentesque maximum ipsum eget velit imperdiet sodales. Suspendisse in blandit ml.</p>
+                    <p style="padding-right: 20vw;  font-size: 20px; color: white; padding-left: 3vw;">Pellentesque finibus fells risus, ut malesuada fells viversa at. Quiaque accumsan in mi non hendrerit.</p>
+                    <button>Read more</button>
+                    <header class="b1">
+                    <img src="team.jpg" alt="" style="margin-bottom: 30vh;" class="bo3">
+                </header>
+            </header>
+    </section>
+    <section class="container4">
+        <header class="box3">
+            <h2 style="color: white; padding-left: 2vw; ">Our work</h2>
+            <p style="color: white; padding-left: 2vw; padding-top: 5vh;">Aliquam intedum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendisse a dictum torter, vel rhoncus libero. Integer at 
+                lacus velit. Nullam dapibus venenatis placerat. </p>
+                <header class="f1">
+                   
+                        <img src="gallery-img-01-tn.jpg" alt="" >
+                        <img src="gallery-img-02-tn.jpg" alt="" >
+                        <img src="gallery-img-03-tn.jpg" alt="" >
+                        <img src="gallery-img-04-tn.jpg" alt="" >
+                   
+                </header>
+        </header>
+        
+    </section>
+    <section class="container5">
+        <header class="box4">
+            <h2 style="color: white; padding-left: 2vw;">Contact us</h2>
+            <p style="font-size: 20px; color: white; padding-left: 2vw;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam interdum, nisl sed faucibus tempor, massa velit laoreet ipsum, et faucibus sapien magna at enim. Suspendissea dictum torter, vel rhoncus libero.</p>
+            <form class="for">
+                <input type="text" placeholder="Name"  >
+                <input type="text" placeholder="Email" ><br><br>
+                <textarea rows="3" cols="25">
+                </textarea><br><br>
+                <button>submit</button>
+            </form>
+        </header>
+    </section>
+</body>
+</html>
